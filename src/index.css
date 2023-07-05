@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+     html ,body, #root {
+      @apply h-full
+     }
+     #root{
+          @apply flex flex-col bg-backdrop text-white antialiased
+     }
+     .wrepper{
+          height: calc( 100% - theme("spacing.24"));
+          @apply flex
+     }
+     
+}
